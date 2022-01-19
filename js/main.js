@@ -92,6 +92,7 @@ const loadNotes = () => {
             const note = userNotes.find(note => note.id == noteId);
             noteArea.value = note.text;
             loadedNote = note;
+            modalLoadNotes.classList.add('inactive');
         });
     }
 };
